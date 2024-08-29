@@ -102,14 +102,16 @@ int main(){
     g.addEdge(10,12);
     g.addEdge(10,12);
 
-    // g.printGraph();    
+    g.printGraph();    
     // g is graph with unknown shape
-
-    // vector<int> a = g.BFS(5); 
-    // for(int i=0;i<a.size();i++){
-        // cout<<a[i]<<" ";
-    // }
-    // int count=0;
+    cout<<"BFS"<<endl;
+    vector<int> b = g.BFS(5); 
+    for(int i=0;i<b.size();i++){
+        cout<<b[i]<<" ";
+    }
+    int count=0;
+    cout<<endl;
+    cout<<"DFS"<<endl;
     vector<vector<int>> a = g.DFS(12);
     for(int i=0;i<a.size();i++){
         // cout<<count<<" "<<endl;
